@@ -172,7 +172,7 @@ svg * {
   --font-size-main: 16px;
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-oragne: #E58311;
+  --color-orange: #E58311;
   --font-weight-bold: 700;
   --font-weight-semiBold: 600;
   --font-weight-medium: 500;
@@ -182,4 +182,172 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-main);
   font-weight: var(--font-weight-4);
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 30px 0px 30px 0px;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-image: url("./../img/logo.svg");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 92px;
+  height: 40px;
+}
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+.header__nav-link {
+  font-weight: var(--font-weight-medium);
+  font-size: 18px;
+  color: var(--color-black);
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.header__nav-link:hover {
+  color: var(--color-orange);
+}
+.header__nav-link--bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.hero {
+  border-radius: 30px;
+}
+.hero__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 865px;
+  border-radius: 30px;
+  background-image: url("./../img/honey-big.svg"), linear-gradient(57deg, #ff9d2d 0%, #ffd877 100%);
+  background-position: center center; /* x y */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.hero__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -88px;
+  width: 205px;
+  height: 322px;
+  background-image: url("./../img/soty.svg");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__content {
+  margin-left: 180px;
+}
+.hero__text {
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 100px;
+}
+.hero__text--2 {
+  margin-left: 100px;
+}
+.hero__text--3 {
+  position: relative;
+  margin-bottom: 70px;
+  margin-left: 300px;
+}
+.hero__text--3::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: -300px;
+  width: 190px;
+  height: 130px;
+  background-image: url("./../img/bee.png");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__text--3::before {
+  content: "";
+  position: absolute;
+  bottom: 35px;
+  left: -295px;
+  width: 274px;
+  height: 2px;
+  background-color: var(--color-black);
+}
+.hero__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.hero__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+  padding: 0 50px;
+  border: 2px solid var(--color-black);
+  background-color: var(--color-black);
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.hero__button:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+.hero__button--transparent {
+  background: transparent;
+  color: var(--color-black);
+}
+.hero__img {
+  width: 685px;
+  height: 650px;
+  background-image: url("./../img/honey.png");
+  background-position: center center; /* x y */
+  background-size: contain;
+  background-repeat: no-repeat;
 }

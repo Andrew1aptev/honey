@@ -1,0 +1,98 @@
+.hero {
+    border-radius: 30px;
+
+    &__wrapper{
+        position: relative;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        min-height: 865px;
+        border-radius: 30px;
+        background-image: url('./../img/honey-big.svg'),
+        linear-gradient(57deg, #ff9d2d 0%, #ffd877 100%);
+        background-position: center center; /* x y */
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__wrapper::after{
+        content: '';
+        position: absolute;
+        top: 11px;
+        left: -88px;
+        width: 205px;
+        height: 322px;
+        background-image: url('./../img/soty.svg');
+        background-position: center center; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__content{
+        margin-left: 180px;
+    }
+    &__text{
+        color: var(--color-black);
+        font-weight: 700;
+        font-size: 100px;
+    }
+    &__text--2{
+        margin-left: 100px;
+    }
+    &__text--3{
+        position: relative;
+        margin-bottom: 70px;
+        margin-left: 300px;
+    }
+    &__text--3::after{
+        content: '';
+        position: absolute;
+        bottom: 30px;
+        left: -300px;
+        width: 190px;
+        height: 130px;
+        background-image: url('./../img/bee.png');
+        background-position: center center; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__text--3::before{
+        content: '';
+        position: absolute;
+        bottom: 35px;
+        left: -295px;
+        width: 274px;
+        height: 2px;
+        background-color: var(--color-black);
+    }
+    &__buttons{
+        display: flex;
+        column-gap: 30px;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65px;
+        padding: 0 50px;
+        border: 2px solid var(--color-black);
+        background-color: var(--color-black);
+        color: white;
+        text-decoration: none;
+        transition: all .2s ease;
+    }
+    &__button:hover{
+        background-color: var(--color-white);
+        color: var(--color-black);
+    }
+    &__button--transparent{
+        background: transparent;
+        color: var(--color-black);
+    }
+    &__img{
+        width: 685px;
+        height: 650px;
+        background-image: url('./../img/honey.png');
+        background-position: center center; /* x y */
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
